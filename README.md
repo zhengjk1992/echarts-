@@ -47,11 +47,11 @@ def crawler(key="key", start='2020-01-01'):
 			"countryShortCode":"ITA"
 }
 ```
-## 3.寻找准确的地国字映射关系
-由于pyecharts的Map组件是根据英文名称进行准确的赋值，我们接口采集的数据部分国名与pyecharts标准存在差异，需要建立一张准确的国名映射关系，经过多次比对，总结映射关系如下：
+## 3.寻找准确的国名映射关系
+由于pyecharts的Map组件是根据英文名称进行准确的赋值，我们接口采集的数据部分国名与pyecharts标准存在差异，需要建立一张准确的国名映射关系表，经过多次比对，总结映射关系如下：（略）
 
 ## 4.使用Timeline及Map控件
-控件需要熟悉的主要内容是各种参数的组合配置以及数据的准确提供全局配置项及系列配置项
+控件需要熟悉的主要内容是各种参数的组合配置以及数据的准确提供。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200503215127705.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjYyOTIzMw==,size_16,color_FFFFFF,t_70)
 Map控件的配置方面，一是在对象初始化时确定组件的大小、标题及风格等参数，二是在全局配置项设置visualmap_opts及legend_opts，三是在系列配置项设置label_opts等。
